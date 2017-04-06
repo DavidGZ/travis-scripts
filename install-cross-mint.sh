@@ -4,6 +4,7 @@
 cat <<EOF | sudo apt-key add -
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v1.4.10 (GNU/Linux)
+
 mQENBEvdU9gBCACzsGfqY8sucAudjQCzloQW4WJ8mUheNbJEqKkaxf4fZg5Y4D1k
 MiN+bMIoQiTODV23uVY9DIXIMxwp+mzAEI67H7meyJRn7wKeAxbEB0UNGXvf+szV
 epHbufXlHcQFieT4pciheQiab76hDbXARCOap160/YmDDc3UxZwxeF2qdQHvKEOB
