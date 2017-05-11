@@ -28,7 +28,8 @@ then
     git rm -rf "${PUBLISH_PATH}"
     mkdir -p "${PUBLISH_PATH}"
     cp -r "${OUT}"/* "${PUBLISH_PATH}"
-    git add "${PUBLISH_PATH}" && git commit -m "${COMMIT_MESSAGE}" && git push
+    git add "${PUBLISH_PATH}" && git commit -m "${COMMIT_MESSAGE}" \
+        && (while true; do git push; [ $? -ne 0 ] || break; git pull --rebase; done)
 fi
 
 # it's possible to hook 'deploy' on:
